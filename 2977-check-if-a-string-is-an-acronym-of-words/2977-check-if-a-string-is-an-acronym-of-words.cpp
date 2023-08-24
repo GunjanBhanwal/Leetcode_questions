@@ -3,10 +3,9 @@ public:
     bool isAcronym(vector<string>& words, string s) {
         string t="";
         for(auto w:words){
-            t=t+w[0];
-        
+            t+=w[0];
         }
-        if(t==s){
+        if(s==t){
             return 1;
         }
         return 0;
