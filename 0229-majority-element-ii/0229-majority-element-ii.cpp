@@ -3,12 +3,12 @@ public:
     vector<int> majorityElement(vector<int>& nums) {
         vector<int>ans;
         int len=nums.size();
-        map<int,int> a;
+        map<int,int>mp;
         for(int i:nums)
         {
-            a[i]++;
+            mp[i]++;
         }
-        for(auto i:a)
+        for(auto i:mp)
         {
             if(i.second>len/3)
             {
