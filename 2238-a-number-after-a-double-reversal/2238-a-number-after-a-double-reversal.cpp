@@ -1,6 +1,6 @@
 class Solution {
 public:
-int reverse(int num){
+int rev(int num){
     int ans=0;
     while(num!=0){
         int rem=num%10;
@@ -10,8 +10,9 @@ int reverse(int num){
     return ans;
 }
     bool isSameAfterReversals(int num) {
-       int ans=reverse(num);
-       ans=reverse(ans);
-       return (num==ans); 
+    //    int ans=reverse(num);
+    //    ans=reverse(ans);
+    //    return (num==ans);
+    return num==rev(rev(num)); 
     }
 };
